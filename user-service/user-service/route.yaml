@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: user-service
+spec:
+  to:
+    kind: Service
+    name: user-service
+

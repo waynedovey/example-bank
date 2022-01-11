@@ -7,3 +7,8 @@ All of this commands needs to be performed in the ACM Hub cluster to deploy thro
 ```
 oc apply -k transaction-service/acm-resources
 ```
+* Deploy the user-service
+
+```
+oc apply -k user-service/acm-resources
+```
