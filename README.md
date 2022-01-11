@@ -12,3 +12,8 @@ oc apply -k transaction-service/acm-resources
 ```
 oc apply -k user-service/acm-resources
 ```
+* Deploy the mobile-simulator
+
+```
+oc apply -k mobile-simulator/acm-resources
+```
