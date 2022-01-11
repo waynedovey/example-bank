@@ -5,12 +5,13 @@ metadata:
   name: transaction-service
   namespace: bank-infra
 spec:
-  selector:
-    matchExpressions:
-    - key: app
-      operator: In
-      values:
-      - transaction-service-app
   componentKinds:
   - group: apps.open-cluster-management.io
     kind: Subscription
+  descriptor: {}
+  selector:
+    matchExpressions:
+      - key: app
+        operator: In
+        values:
+          - transaction-service

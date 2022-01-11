@@ -5,5 +5,5 @@ metadata:
   name: transaction-service-app-latest
   namespace: bank-infra
 spec:
-  type: GitHub
   pathname: https://github.com/waynedovey/example-bank.git
+  type: GitHub

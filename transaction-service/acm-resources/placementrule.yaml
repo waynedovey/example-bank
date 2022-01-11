@@ -1,21 +1,12 @@
-
+---
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: transaction-service-pr
-  namespace: bank-infra
   labels:
-    app: transaction-service-app
+    app: transaction-service
+  name: transaction-service-placement-1
+  namespace: bank-infra
 spec:
-  clusterReplicas: 2
-  clusterConditions:
-    - type: ManagedClusterConditionAvailable
-      status: "True"
   clusterSelector:
-    matchExpressions:
-    - key: name
-      operator: In
-      values:
-      - sydney-cluster
-      - melbourne-cluster
-      - brisbane-cluster
+    matchLabels:
+      'environment': 'dev'
