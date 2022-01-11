@@ -5,5 +5,5 @@ All of this commands needs to be performed in the ACM Hub cluster to deploy thro
 * Deploy the transaction-service
 
 ```
-oc apply -k transaction-service-app/acm-resources
+oc apply -k transaction-service/acm-resources
 ```
