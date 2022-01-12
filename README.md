@@ -2,6 +2,10 @@
 
 All of this commands needs to be performed in the ACM Hub cluster to deploy through GitOps.
 
+```
+oc new-project bank-infra
+```
+
 * Deploy the transaction-service
 
 ```
@@ -16,4 +20,10 @@ oc apply -k user-service/acm-resources
 
 ```
 oc apply -k mobile-simulator/acm-resources
+
+```
+* Deploy the bank-knative-service
+
+```
+oc apply -k bank-knative-service/acm-resources
 ```
