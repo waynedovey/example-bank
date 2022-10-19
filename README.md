@@ -32,6 +32,7 @@ oc apply -k bank-knative-service/acm-resources
 
 ```
 oc apply -k database-service/acm-resources
+```
 
 * Cleanup
 
