@@ -1,21 +1,9 @@
-apiVersion: bitnami.com/v1alpha1
-kind: SealedSecret
+apiVersion: v1
+data:
+  APP_ID_ADMIN_PASSWORD: YTgydWVBUDZQUlk0a0R3
+  APP_ID_ADMIN_USER: YWRtaW51c2Vy
+kind: Secret
 metadata:
-  annotations:
-    sealedsecrets.bitnami.com/cluster-wide: "true"
-  creationTimestamp: null
   name: bank-oidc-adminuser
   namespace: bank-infra
-spec:
-  encryptedData:
-    APP_ID_ADMIN_PASSWORD: AgABFmGPV5d1hrGMcGjcrmTXFIiqzsKvf/EF5Ph2CNJGQmaPTBfsr2WcLQFO00Q97PSI6Vm6v7kK+xGH3kwdsDDF+rRoU3y07BGhSNGdHHGVFlT+p75nkjstRmx6FPcMrKvixGGZnyAqO5VQTh5/2PBSbTQXlIqzqDhFKzmbxYaXqjTF0INDxz37m94FiD7bp2fyP3FhIIUPyXhg7T0biJBzVdRfwBPVgrUhm/xlPNxjBydW4nE7FjpcurG4oJljcZdcauZf33QVYMuf/lm3NfV7ToobsVbX4dlE97EItzvn8Zao1GKs6Zp3sasshQEC9yCj3JMLXQA2OHggPnGjJBy1AmNvYdblO1+4LP95tWFAEzcfSt2v+WdU1YV2xRMHwZXDXBzYDBWd0AOQSbRTGvhI6GNh2asfAFqEpOx/XhQ11gJEWC7iXwnlfxXsSqNRHa3bPUIOAnwP9Ui0mkfj07/nyCZABVLPOn1G+f+WtJbjx409bjouKQoLmQ3xbLVhOOVIH31WvlpCRitQc/nE+SxxVb0tYnvZnTy1f6awjPTkXSv7OknoU9Dp1U1lyEnj2S9t72taXHICrLLxfucsS+CFvLMGmtT2Rvvcj4RRe8SNJEAVUf/240CDiWuEfPs3bdAJ09Ew6GWoUon6PLCK5wkctU3psj3v4W1MbZKwzWFEhaFf4Ok9IGYu7jCKN3lLMNcU7adtUPS+Qw==
-    APP_ID_ADMIN_USER: AgCx5ufA+IvfhS4P7gkptfzdd0MB9Zu1mHNLFqyjlNzCSXpP4awFss78IN5jnH3XnEoGjmvNAR3yInr+uQvxkLFljVsdQSDOzvkQWkNiNpPdzfOqJNEsPfEBt9wR/R4D6TwR2c36m1bU4oea+BnNuKCrKx3aPCMk5cL/h5VjyD0NVHBHzQ2O0rVoH1Br/LtlUI/yo0hFsTZvvPm5PQgTdjmd/IcdvA4INEO0nvogocrtFghh7l+sIsZPz2StmoHL6cDJwjxdBP+jafwBPDt7q6c7ruafaIWOuMOkCUi8rrDMcbSIN3KcaHGVUfXcKu6mx5aYk8S0UX0ofyG97FpEONw5iDe2rveR/iMRdEPapTaIP42Yel3fCJiMg26ktDn30dP8UbXho7sEqsEMHzs9JN3toHFbgbDMHl2157rQQXUdlEUch5q7D6ELXe6VI91LCYs1QJykogojiFW+jfhL2nqCl49/GDXHjYb+k4akBIqRBjtohiSm8V7oriYeKQGQIsysHi/OPc3YlbUU00WtOKMdLbWfo31/OfJmAk/Uspb/2RvfYTkc8MYZepCGYfjbvB9hPvXNQ/YSg/zDEsf4NzM9Ee1iBtFPU/Wki/vJ19d0v/NIsm/q7L8QeNQRTxB2flDgvIF5QadsQ/oFSlwFnPlkp1IC2M36z3s10f3B48D/ISOjyC2QzAr+pdrYDyHu0Z0gWI7YhtlJBOQ=
-  template:
-    data: null
-    metadata:
-      annotations:
-        sealedsecrets.bitnami.com/cluster-wide: "true"
-      creationTimestamp: null
-      name: bank-oidc-adminuser
-      namespace: bank-infra
-    type: Opaque
+type: Opaque
