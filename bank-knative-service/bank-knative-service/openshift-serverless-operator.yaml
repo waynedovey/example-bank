@@ -9,8 +9,7 @@ metadata:
   name: openshift-operators
 spec:
   targetNamespaces:
-  #- openshift-serverless
-  - *
+  - openshift-serverless
 ---  
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
