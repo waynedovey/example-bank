@@ -3,18 +3,11 @@ kind: Namespace
 metadata:
   name: openshift-serverless
 ---
-# apiVersion: operators.coreos.com/v1
-# kind: OperatorGroup
-# metadata:
-#   name: openshift-operators
-# spec:
-#   targetNamespaces:
-#   - openshift-serverless
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
-  name: serverless
-  namespace: openshift-serverless
+  name: serverless-operator
+  namespace: openshift-operators
 ---  
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
